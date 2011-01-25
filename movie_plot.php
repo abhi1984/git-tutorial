@@ -1,29 +1,29 @@
 <?
 class MoviePlotGenerator {
-	public static $adjectives = array('sadistic',
-									  'diminuitive',
-									  'fat',
-									  'determined',
+	public static $adjectives = array('happy', 'cocky', 'fierce', 
+									  'hot',
+									  'ugly',
 									  'grisly');
 						
-	public static $occupations = array('movie-critic',
+	public static $occupations = array('movie-critic', 'internet engineer', 
 									   'goat wrangler',
-									   'entrepreneur',
+									   'hopeless entrepreneur',
 									   'construction worker',
-									   'dentist',
-									   'archaeologist',
+									   'useless dentist',
 									   'investment banker',
-									   'baker',
-									   'swimsuit model');
+									   'senseless baker',
+									   'big boss', 
+									   'beautiful model');
 						 
 	public static $quirks = array('penchant for melodrama',
-								  'murky past',
-								  'love for puppies',
-								  'taste for blood',
+								  'dark past',
+								  'love for hush puppies',
+								  'taste for flesh',
 								  'lust for antiques',
 								  'background in Kung Fu',
 								  'baby on the way',
 								  '57\' Chevy',
+								  'Range Rover', 
 								  'family back in Mexico');
 					
 	/**
