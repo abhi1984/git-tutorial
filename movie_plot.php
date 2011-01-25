@@ -57,6 +57,7 @@ class MoviePlotGenerator {
 	 */	
 	protected function getRandom($arr)
 	{
+		$arr = array_values($arr);
 		return $arr[mt_rand(0, count($arr) - 1)];
 	}
 		
