@@ -37,10 +37,10 @@ class MoviePlotGenerator {
 		$his_adjective = $this->getRandom(self::$adjectives);
 		$his_occupation = $this->getRandom(self::$occupations);
 		$his_quirk = $this->getRandom(self::$quirks);
-		
-		$her_adjective = $this->getRandom(self::$adjectives);
-		$her_occupation = $this->getRandom(self::$occupations);
-		$her_quirk = $this->getRandom(self::$quirks);		
+
+		$her_adjective = $this->getRandom(array_diff(self::$adjectives, array($his_adjective)));
+		$her_occupation = $this->getRandom(array_diff(self::$occupations, array($his_occupation)));
+		$her_quirk = $this->getRandom(array_diff(self::$quirks, array($his_quirk)));		
 		
 		$plot  = "He's a $his_adjective $his_occupation with a $his_quirk. ";
 		$plot .= "She's a $her_adjective $her_occupation with a $her_quirk. ";
@@ -57,7 +57,8 @@ class MoviePlotGenerator {
 	 */	
 	protected function getRandom($arr)
 	{
-		return $arr[rand(0, count($arr) - 1)];
+		$arr = array_values($arr);
+		return $arr[mt_rand(0, count($arr) - 1)];
 	}
 		
 }
