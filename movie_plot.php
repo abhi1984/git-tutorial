@@ -1,17 +1,18 @@
 <?
 class MoviePlotGenerator {
-	public static $adjectives = array('happy',
+	public static $adjectives = array('happy', 'cocky', 'fierce', 
 									  'hot',
 									  'ugly',
 									  'grisly');
 						
-	public static $occupations = array('movie-critic',
+	public static $occupations = array('movie-critic', 'internet engineer', 
 									   'goat wrangler',
 									   'hopeless entrepreneur',
 									   'construction worker',
 									   'useless dentist',
 									   'investment banker',
 									   'senseless baker',
+									   'big boss', 
 									   'beautiful model');
 						 
 	public static $quirks = array('penchant for melodrama',
@@ -22,6 +23,7 @@ class MoviePlotGenerator {
 								  'background in Kung Fu',
 								  'baby on the way',
 								  '57\' Chevy',
+								  'Range Rover', 
 								  'family back in Mexico');
 					
 	/**
